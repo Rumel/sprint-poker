@@ -32,7 +32,7 @@ Game = React.createClass
           <div className="col-md-8">
             <Errors/>
             <GameCurrentTicket/>
-            <Cards disabled={ @state.gameState.name != 'voting' }/>
+            <Cards/>
             { if @state.user.id == @state.game.owner.id
                 <GameTicketsOwner/>
               else
